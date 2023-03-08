@@ -1,12 +1,13 @@
 function teamHtml(data) {
     for (let i = 0; i < data.length; i++) {
-        if (data[i].getRole()=== "Engineer") {
-            
-        } else if (data[i].getRole()=== "Manager") {
+        if (data[i].getRole() === "Engineer") {
 
-        } else {}
+        } else if (data[i].getRole() === "Manager") {
+
+        } else if (data[i].getRole() === "Intern") {
+
+        } else (done())
     }
-    
 }
 
 
