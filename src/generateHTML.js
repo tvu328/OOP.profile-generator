@@ -1,4 +1,5 @@
-function teamHtml(data) {
+function teamHtml(data) 
+var array = ['Employee', 'Engineer', 'Intern', 'Manager'];
     for (let i = 0; i < data.length; i++) {
         if (data[i].getRole() === "Engineer") {
             engineerCard(data[i])
@@ -6,7 +7,7 @@ function teamHtml(data) {
             managerCard(data[i])
         } else if (data[i].getRole() === "Intern") {
             internCard(data[i])
-        } else (done())
+        // } else (done())
     }
 }
 
