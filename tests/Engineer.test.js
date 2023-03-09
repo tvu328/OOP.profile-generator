@@ -1,11 +1,7 @@
-function Employee(name, id, email, github) {
-    return name, id, email, github;
-}
+const Engineer = require('../lib/Engineer');
 
-module.exports = Engineer
+const engineer = new Engineer("Tyler", 1, "tyler@gmail.com", "tyler123")
 
-const Engineer = require('./tests/Engineer');
-
-test('Engineer', () => {
-  expect(name, id, email, github);
+test('insures that engineers github value is a string', () => {
+    expect(engineer.github).toEqual(expect.any(String))
 });

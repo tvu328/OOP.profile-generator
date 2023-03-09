@@ -1,11 +1,9 @@
-function Employee(name, id, email) {
-    return name, id, email;
-}
+ 
 
-module.exports = Employee 
+const Employee = require('../lib/Employee');
 
-const Employee = require('./tests/Employee');
+test('creates a employee object', () => {
+  const employee = new Employee("Tyler", 1, "tyler@gmail.com")
 
-test('Employee', () => {
-  expect(name, id, email);
+  expect(employee.id).toEqual(expect.any(Number))
 });

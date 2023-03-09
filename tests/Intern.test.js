@@ -1,11 +1,8 @@
-function Intern(name, id, email, school) {
-    return name, id, email, school;
-}
 
-module.exports = Intern 
+const Intern = require('../lib/Intern');
 
-const Intern = require('./tests/Intern');
+test('creates a intern object', () => {
+    const intern = new Intern("Tyler", 1, "tyler@gmail.com", "UW")
 
-test('Intern', () => {
-  expect(name, id, email, school);
+    expect(intern.school).toEqual(expect.any(String))
 });
