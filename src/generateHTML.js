@@ -1,34 +1,45 @@
-function teamHtml(data) 
-var array = ['Employee', 'Engineer', 'Intern', 'Manager'];
+function teamHtml(data) {
+    var array = [];
     for (let i = 0; i < data.length; i++) {
         if (data[i].getRole() === "Engineer") {
-            engineerCard(data[i])
+            array.push(engineerCard(data[i]))
         } else if (data[i].getRole() === "Manager") {
-            managerCard(data[i])
+            array.push(managerCard(data[i]))
         } else if (data[i].getRole() === "Intern") {
-            internCard(data[i])
-        // } else (done())
+            array.push(internCard(data[i]))
+            // } else (done())
+        }
     }
+    return array.join("")
 }
 
 // function that returns html for a Engineer card
 const engineerCard = (data) => {
     return `<section>
-    <h1>${data.name}</h1>
+    <h1>${data.name}
+        ${data.id}
+        [${data.email}](https://mail.google.com/mail/u/0/#inbox/${data.email}/)
+        [${data.github}](https://github.com/${data.github}/)</h1>
     </section>`
 }
 
 // function that returns html for a Manager card
 const managerCard = (data) => {
     return `<section>
-    <h1>${data.name}</h1>
+    <h1>${data.name}
+        ${data.id}
+        ${data.email}
+        ${data.officeNumber}</h1>
     </section>`
 }
 
 // function that returns html for a Intern card
 const internCard = (data) => {
     return `<section>
-    <h1>${data.name}</h1>
+    <h1>${data.name}
+        ${data.id}
+        ${data.email}
+        ${data.school}</h1>
     </section>`
 }
 
