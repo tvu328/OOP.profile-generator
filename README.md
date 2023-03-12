@@ -7,4 +7,5 @@ This app was made to create a Node.js command-line app that generates a HTML web
 Steps to install this app is to utilize Node and Jest as well as installing inquirer. 
 
 ## Usage 
-walkthru vid link 
+https://drive.google.com/file/d/1MM0Q6_dhih88qARjv-TD0mzoe701hJW-/view
+https://drive.google.com/file/d/1MM0Q6_dhih88qARjv-TD0mzoe701hJW-/view?usp=sharing
